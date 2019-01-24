@@ -109,7 +109,7 @@ GET /currency_converter?amount=10.92&input_currency=£
 ```
 ### API wrong currency code/symbol
 ```
-GET currency_converter?amount=5&input_currency=CZK&output_currency=USX
+GET /currency_converter?amount=5&input_currency=CZK&output_currency=USX
 {
 	"status":"error",
 	{"message":"Wrong code: USX. Available codes: DZD, NAD, GHS, EGP, ..."}
@@ -117,4 +117,4 @@ GET currency_converter?amount=5&input_currency=CZK&output_currency=USX
 ```
 
 ### Test
-File `test_converter.py` for basic tests
+File `test_currency_converter.py` for basic tests
