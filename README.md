@@ -114,3 +114,6 @@ GET currency_converter?amount=5&input_currency=CZK&output_currency=USX
 	{"message":"Wrong code: USX. Available codes: DZD, NAD, GHS, EGP, ..."}
 }
 ```
+
+### Test
+File `test_converter.py` for basic tests
