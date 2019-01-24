@@ -1,6 +1,6 @@
 # Currency converter - KIWI task
 
-## Junior Python Developer (Data&Automation Team)
+Junior Python Developer (Data&Automation Team)
 
 ## Requires
 - python 3.7
@@ -19,6 +19,7 @@ pipenv install
 - `output_currency` - 3 letters name or currency symbol
 
 ### Available currency symbols
+Currency code is defined by ISO 4217. Using symbols is not recommended.
 ```
 $ => USD
 € => EUR
@@ -30,7 +31,7 @@ $ => USD
 
 ## Examples
 
-### CLI 
+### CLI
 ```
 ./currency_converter.py --amount 100.0 --input_currency EUR --output_currency CZK
 {   
@@ -39,7 +40,7 @@ $ => USD
         "amount": 100.0,        
     },
     "output": {
-        "CZK": 2572.62, 
+        "CZK": 2572.62,
     }
 }
 ```
@@ -51,20 +52,20 @@ $ => USD
         "amount": 0.9        
     },
     "output": {
-        "AUD": 0.19, 
+        "AUD": 0.19,
     }
 }
 ```
 ```
-./currency_converter.py --amount 10.92 --input_currency £ 
+./currency_converter.py --amount 10.92 --input_currency £
 {
     "input": {
     	"currency": "GBP",
         "amount": 10.92       
     },
     "output": {
-    	"DZD": 1689.99, 
-    	"NAD": 197.26, 
+    	"DZD": 1689.99,
+    	"NAD": 197.26,
     	"GHS": 69.97,
         .
         .
@@ -84,7 +85,7 @@ GET /currency_converter?amount=0.9&input_currency=¥&output_currency=AUD
         "amount": 0.9        
     },
     "output": {
-        "AUD": 0.19, 
+        "AUD": 0.19,
     }
 }
 ```
@@ -94,11 +95,11 @@ GET /currency_converter?amount=10.92&input_currency=£
 {
     "input": {
     	"currency": "GBP",
-        "amount": 10.92 
+        "amount": 10.92
     },
     "output": {
-    	"DZD": 1689.99, 
-    	"NAD": 197.26, 
+    	"DZD": 1689.99,
+    	"NAD": 197.26,
     	"GHS": 69.97,
         .
         .
