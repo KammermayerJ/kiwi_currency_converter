@@ -73,6 +73,13 @@ $ => USD
     }
 }
 ```
+### CLI wrong currency code/symbol
+```
+./currency_converter.py --amount 100 --input_currency CZK --output_currency USX
+Wrong code: 'USX'. 
+Available codes: DZD, NAD, GHS, EGP, ...
+
+```
 ### API
 Run server by `./api.py`
 Server is runnig on http://127.0.0.1:5000/
@@ -111,8 +118,8 @@ GET /currency_converter?amount=10.92&input_currency=£
 ```
 GET /currency_converter?amount=5&input_currency=CZK&output_currency=USX
 {
-	"status":"error",
-	{"message":"Wrong code: USX. Available codes: DZD, NAD, GHS, EGP, ..."}
+	"status": "error",
+	"message": "Wrong code: 'USX'. Available codes: DZD, NAD, GHS, EGP, ..."
 }
 ```
 
